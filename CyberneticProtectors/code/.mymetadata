@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Cybernatic"
+  id="myeclipse.1331382597203"
+  context-root="/Cybernatic"
+  j2ee-spec="5.0"
+  archive="Cybernatic.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

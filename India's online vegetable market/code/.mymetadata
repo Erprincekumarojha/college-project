@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="India's online vegetable market"
+  id="myeclipse.1468298519910"
+  context-root="/Veg1"
+  j2ee-spec="5.0"
+  archive="India's online vegetable market.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

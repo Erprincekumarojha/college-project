@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="sanju" database="VEG" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="LOGININFO">
+      <Drawing expanded="true" location="0,510" dimensions="191,110" />
+      <Columns>
+        <Column name="LOGINID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="PASS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="UTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="UNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="MARKET_NAME_TAB">
+      <Drawing expanded="true" location="0,0" dimensions="230,250" />
+      <Columns>
+        <Column name="MARKET_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="MARKET_NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="MARKET_ADD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="SU" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="MO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="TU" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="WE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="TH" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="FR" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SA" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="LOGINID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="USERINFO">
+      <Drawing expanded="true" location="0,295" dimensions="202,170" />
+      <Columns>
+        <Column name="LOGINID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="UNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="UEMAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="UMOB" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="UDOB" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="UGENDER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="UADDRESS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="VEG_MARKET_PRICE_TAB">
+      <Drawing expanded="true" location="275,0" dimensions="248,230" />
+      <Columns>
+        <Column name="VMP_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="MARKET_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="VEG_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="VEG_COST" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="VEG_COST_PER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="VEG_COST_STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="VEG_AVAILABLE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="VEG_COST_DATE" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="VEG_COST_TIME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LOGINID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="VEG_NAME_TAB">
+      <Drawing expanded="true" location="247,295" dimensions="214,130" />
+      <Columns>
+        <Column name="VEG_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="VEG_NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="VEG_PIC" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BLOB" size="4000" />
+        </Column>
+        <Column name="VEG_PIC_EXT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LOGINID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships />
+</ERDiagram>
+

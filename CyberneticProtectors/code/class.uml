@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_D67LkZHoEeKIn7-uhh23ew">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_EZBc0JHoEeKIn7-uhh23ew">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_EZBc0ZHoEeKIn7-uhh23ew">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_EaXgoZHoEeKIn7-uhh23ew">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ED3FIJHoEeKIn7-uhh23ew" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_EE6OAJHoEeKIn7-uhh23ew" name="cyber">
+      <packagedElement xmi:type="uml:Package" xmi:id="_EE6OAZHoEeKIn7-uhh23ew" name="dao">
+        <packagedElement xmi:type="uml:Class" xmi:id="_EGZbwJHoEeKIn7-uhh23ew" name="AbstractDataAccessObject">
+          <ownedAttribute xmi:id="_ERbAAJHoEeKIn7-uhh23ew" name="mCon" visibility="private" isStatic="true" type="_EPo3UJHoEeKIn7-uhh23ew"/>
+          <ownedAttribute xmi:id="_ERbAAZHoEeKIn7-uhh23ew" name="mProps" visibility="private" isStatic="true" type="_EPo3VpHoEeKIn7-uhh23ew"/>
+          <ownedOperation xmi:id="_ES600JHoEeKIn7-uhh23ew" name="getProperties" visibility="public" isStatic="true">
+            <ownedComment xmi:id="_ES600pHoEeKIn7-uhh23ew">
+              <body>/** 
+ * @return the props
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ES600ZHoEeKIn7-uhh23ew" name="return" type="_EPo3VpHoEeKIn7-uhh23ew" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ES6005HoEeKIn7-uhh23ew" name="setProperties" visibility="public">
+            <ownedComment xmi:id="_ES601ZHoEeKIn7-uhh23ew">
+              <body>/** 
+ * @param propsapplication properties object
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ES601JHoEeKIn7-uhh23ew" name="aProps" type="_EPo3VpHoEeKIn7-uhh23ew"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ES601pHoEeKIn7-uhh23ew" name="getConnection" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_ES6015HoEeKIn7-uhh23ew" name="return" type="_EPo3UJHoEeKIn7-uhh23ew" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_EZBc0pHoEeKIn7-uhh23ew" name="getSequenceID" visibility="public">
+            <ownedParameter xmi:id="_EZBc05HoEeKIn7-uhh23ew" name="tableName">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_EZBc1JHoEeKIn7-uhh23ew" name="pkid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_EZBc1ZHoEeKIn7-uhh23ew" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3aJHoEeKIn7-uhh23ew" name="SqlConstants"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ELxD8JHoEeKIn7-uhh23ew" name="daoi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ELxD8ZHoEeKIn7-uhh23ew" name="impl">
+          <packagedElement xmi:type="uml:Class" xmi:id="_EL6N4JHoEeKIn7-uhh23ew" name="UserDaoImpl">
+            <ownedAttribute xmi:id="_EZLN0JHoEeKIn7-uhh23ew" name="con" visibility="package" type="_EPo3UJHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EZeIwJHoEeKIn7-uhh23ew" name="pstmt" visibility="package" type="_EPo3Y5HoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EZn5wJHoEeKIn7-uhh23ew" name="pstmt1" visibility="package" type="_EPo3Y5HoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EZ60sJHoEeKIn7-uhh23ew" name="stmt" visibility="package" type="_EPo3VJHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EaNvoJHoEeKIn7-uhh23ew" name="rs" visibility="package" type="_EPo3UpHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EaXgoJHoEeKIn7-uhh23ew" name="rs1" visibility="package" type="_EPo3UpHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EagqkJHoEeKIn7-uhh23ew" name="flag" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_EagqkZHoEeKIn7-uhh23ew"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_EaqbkJHoEeKIn7-uhh23ew" name="closeConnection" visibility="public">
+              <ownedComment xmi:id="_EaqbkZHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The closeConnection method of the AttendanceDaoImpl Class. &lt;br>
+ * This method is called when to take Employee InTime.
+ * @throws ConnectionExceptionif an error occurred
+ */
+</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EaqbkpHoEeKIn7-uhh23ew" name="checkUser" visibility="public">
+              <ownedParameter xmi:id="_Eaqbk5HoEeKIn7-uhh23ew" name="userName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EaqblJHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ea0MkJHoEeKIn7-uhh23ew" name="viewUser" visibility="public">
+              <ownedParameter xmi:id="_Ea0MkZHoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ea0MkpHoEeKIn7-uhh23ew" name="realpath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ea0Mk5HoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ea0MlJHoEeKIn7-uhh23ew" name="insertNewUser" visibility="public">
+              <ownedParameter xmi:id="_Ea0MlZHoEeKIn7-uhh23ew" name="pro" type="_EPo3Z5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_Ea0MlpHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ea9WgJHoEeKIn7-uhh23ew" name="updateUser" visibility="public">
+              <ownedParameter xmi:id="_EbHHgJHoEeKIn7-uhh23ew" name="profileTO" type="_EPo3Z5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EbHHgZHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EbHHgpHoEeKIn7-uhh23ew" name="postSuggesstion" visibility="public">
+              <ownedParameter xmi:id="_EbHHg5HoEeKIn7-uhh23ew" name="pf" type="_EPo3Z5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EbHHhJHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EbQ4gJHoEeKIn7-uhh23ew" name="postResume" visibility="public">
+              <ownedParameter xmi:id="_EbQ4gZHoEeKIn7-uhh23ew" name="pf" type="_EPo3Z5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EbQ4gpHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EbQ4g5HoEeKIn7-uhh23ew" name="viewAgencyChief" visibility="public">
+              <ownedParameter xmi:id="_EbQ4hJHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EbaCcJHoEeKIn7-uhh23ew" name="viewAgencyChiefs" visibility="public">
+              <ownedParameter xmi:id="_EbaCcZHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EbjzcJHoEeKIn7-uhh23ew" name="viewListOfUsers" visibility="public">
+              <ownedParameter xmi:id="_EbjzcZHoEeKIn7-uhh23ew" name="usertype">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EbjzcpHoEeKIn7-uhh23ew" name="realpath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ebjzc5HoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EbjzdJHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EbjzdZHoEeKIn7-uhh23ew" name="deleteUser" visibility="public">
+              <ownedParameter xmi:id="_EbjzdpHoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ebjzd5HoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ebs9YJHoEeKIn7-uhh23ew" name="deleteResume" visibility="public">
+              <ownedParameter xmi:id="_Ebs9YZHoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ebs9YpHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Eb2uYJHoEeKIn7-uhh23ew" name="viewResumes" visibility="public">
+              <ownedParameter xmi:id="_Eb2uYZHoEeKIn7-uhh23ew" name="realpath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Eb2uYpHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_EMp0wJHoEeKIn7-uhh23ew" name="MailDaoImpl">
+            <ownedAttribute xmi:id="_EcAfYJHoEeKIn7-uhh23ew" name="con" visibility="package" type="_EPo3UJHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EcAfYZHoEeKIn7-uhh23ew" name="pstmt" visibility="package" type="_EPo3Y5HoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EcJpUJHoEeKIn7-uhh23ew" name="pstmt1" visibility="package" type="_EPo3Y5HoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EcdLUJHoEeKIn7-uhh23ew" name="stmt" visibility="package" type="_EPo3VJHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EcdLUZHoEeKIn7-uhh23ew" name="rs" visibility="package" type="_EPo3UpHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EcmVQJHoEeKIn7-uhh23ew" name="rs1" visibility="package" type="_EPo3UpHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EcmVQZHoEeKIn7-uhh23ew" name="flag" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_EcmVQpHoEeKIn7-uhh23ew"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_EcwGQJHoEeKIn7-uhh23ew" name="closeConnection" visibility="public">
+              <ownedComment xmi:id="_EcwGQZHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The closeConnection method of the AttendanceDaoImpl Class. &lt;br>
+ * This method is called when to take Employee InTime.
+ * @throws ConnectionExceptionif an error occurred
+ */
+</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EcwGQpHoEeKIn7-uhh23ew" name="deleteMails" visibility="public">
+              <ownedComment xmi:id="_EcwGRpHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The deleteMails method of the MailDaoImpl Class.
+ * This method is called when to deletemails details.
+ * @param Passingmsgid as a one parameter.
+ * @param Passingmailbox as a one parameter.
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @throws NullPointerExceptionif an error occurred
+ * @return boolean value true or false depends upon operations.
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EcwGQ5HoEeKIn7-uhh23ew" name="msgid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EcwGRJHoEeKIn7-uhh23ew" name="mailbox">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EcwGRZHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EcwGR5HoEeKIn7-uhh23ew" name="deleteTips" visibility="public">
+              <ownedParameter xmi:id="_EcwGSJHoEeKIn7-uhh23ew" name="messageidx">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EcwGSZHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ec5QMJHoEeKIn7-uhh23ew" name="mailContacts" visibility="public">
+              <ownedComment xmi:id="_Ec5QMpHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The mailContacts method of the MailDaoImpl Class. &lt;br>
+ * This method is called when to view mailContacts.
+ * @throws SQLExceptionif an error occurred
+ * @throws NullPointerExceptionif an error occurred
+ * @return vector with mail details depends upon operations.
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_Ec5QMZHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ec5QM5HoEeKIn7-uhh23ew" name="viewMails" visibility="public">
+              <ownedComment xmi:id="_Ec5QNpHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewMails method of the MailDaoImpl Class. &lt;br>
+ * This method is called when to view mails.
+ * @throws SQLExceptionif an error occurred
+ * @throws NullPointerExceptionif an error occurred
+ * @return vector with mail details depends upon operations.
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_Ec5QNJHoEeKIn7-uhh23ew" name="mailsTO" type="_EPo3a5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_Ec5QNZHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ec5QN5HoEeKIn7-uhh23ew" name="sendMail" visibility="public">
+              <ownedComment xmi:id="_Ec5QOpHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The sendMail method of the MailDaoImpl Class.
+ * This method is called when to sensMails details.
+ * @param PassingMail bean as a one parameter.
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @throws NullPointerExceptionif an error occurred
+ * @return boolean value true or false depends upon operations.
+ * @throws ConnectionException
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_Ec5QOJHoEeKIn7-uhh23ew" name="mail" type="_EPo3a5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_Ec5QOZHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ec5QO5HoEeKIn7-uhh23ew" name="viewMail" visibility="public">
+              <ownedComment xmi:id="_EdDBMJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewMail method of the MailDaoImpl Class. &lt;br>
+ * This method is called when to view mails.
+ * @throws SQLExceptionif an error occurred
+ * @throws NullPointerExceptionif an error occurred
+ * @return vector with maildetails depends upon operations.
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_Ec5QPJHoEeKIn7-uhh23ew" name="msgid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ec5QPZHoEeKIn7-uhh23ew" name="mailbox">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ec5QPpHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_EMzlwJHoEeKIn7-uhh23ew" name="SecurityDaoImpl">
+            <ownedAttribute xmi:id="_EdDBMZHoEeKIn7-uhh23ew" name="con" visibility="package" type="_EPo3UJHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EdDBMpHoEeKIn7-uhh23ew" name="pstmt" visibility="package" type="_EPo3Y5HoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EdMyMJHoEeKIn7-uhh23ew" name="stmt" visibility="package" type="_EPo3VJHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EdMyMZHoEeKIn7-uhh23ew" name="rs" visibility="package" type="_EPo3UpHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EdV8IJHoEeKIn7-uhh23ew" name="flag" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_EdV8IZHoEeKIn7-uhh23ew"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_EdV8IpHoEeKIn7-uhh23ew" name="closeConnection" visibility="public">
+              <ownedComment xmi:id="_EdV8I5HoEeKIn7-uhh23ew">
+                <body>/** 
+ * The closeConnection method of the AttendanceDaoImpl Class. &lt;br>
+ * This method is called when to take Employee InTime.
+ * @throws ConnectionExceptionif an error occurred
+ */
+</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EdV8JJHoEeKIn7-uhh23ew" name="loginCheck" visibility="public">
+              <ownedComment xmi:id="_EdftIJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The loginCheck method of the SecurityDaoImpl Class. &lt;br>
+ * This method is called when to Check login user details.....
+ * @param passingProfile bean with login id, passord as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector bean with user details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EdV8JZHoEeKIn7-uhh23ew" name="pro" type="_EPo3Z5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EdV8JpHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EdftIZHoEeKIn7-uhh23ew" name="viewTips" visibility="public">
+              <ownedParameter xmi:id="_EdftIpHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EdftI5HoEeKIn7-uhh23ew" name="changePass" visibility="public">
+              <ownedComment xmi:id="_EdftJpHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The changePass method of the SecurityDaoImpl Class. &lt;br>
+ * This method is called when to Password change details.....
+ * @param passingProfile bean with login id, passord as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector bean with user details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EdftJJHoEeKIn7-uhh23ew" name="pf" type="_EPo3Z5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EdftJZHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EdftJ5HoEeKIn7-uhh23ew" name="passwordRecovery" visibility="public">
+              <ownedComment xmi:id="_EdpeIJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The passwordRecovery method of the SecurityDaoImpl Class. &lt;br>
+ * This method is called when to Recover password user details.....
+ * @param passingProfile bean with login id, passord as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return true or false depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EdftKJHoEeKIn7-uhh23ew" name="pf" type="_EPo3Z5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EdftKZHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EdpeIZHoEeKIn7-uhh23ew" name="forgetPass" visibility="public">
+              <ownedComment xmi:id="_EdpeJJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The forgetPass method of the SecurityDaoImpl Class. &lt;br>
+ * This method is called when to forget password user details.....
+ * @param passingProfile bean with login id, passord as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return true or false depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EdpeIpHoEeKIn7-uhh23ew" name="pf" type="_EPo3Z5HoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EdpeI5HoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_EM9WwJHoEeKIn7-uhh23ew" name="CaseDaoImpl">
+            <ownedAttribute xmi:id="_EdyoEJHoEeKIn7-uhh23ew" name="con" visibility="package" type="_EPo3UJHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_Ed8ZEJHoEeKIn7-uhh23ew" name="pstmt" visibility="package" type="_EPo3Y5HoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EePUAJHoEeKIn7-uhh23ew" name="pstmt1" visibility="package" type="_EPo3Y5HoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_Eh0McJHoEeKIn7-uhh23ew" name="stmt" visibility="package" type="_EPo3VJHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_Eh99cJHoEeKIn7-uhh23ew" name="rs" visibility="package" type="_EPo3UpHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EiHHYJHoEeKIn7-uhh23ew" name="rs1" visibility="package" type="_EPo3UpHoEeKIn7-uhh23ew"/>
+            <ownedAttribute xmi:id="_EiQ4YJHoEeKIn7-uhh23ew" name="flag" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_EiQ4YZHoEeKIn7-uhh23ew"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_EiapYJHoEeKIn7-uhh23ew" name="closeConnection" visibility="public">
+              <ownedComment xmi:id="_EiapYZHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The closeConnection method of the AttendanceDaoImpl Class. &lt;br>
+ * This method is called when to take Employee InTime.
+ * @throws ConnectionExceptionif an error occurred
+ */
+</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EiapYpHoEeKIn7-uhh23ew" name="insestCaseFile" visibility="public">
+              <ownedComment xmi:id="_EijzUJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The insestCaseFile method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when add new case details.....
+ * @throws FileNotFoundExceptionif an error occurred
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return boolean value true or false depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EiapY5HoEeKIn7-uhh23ew" name="cas" type="_EPyBRpHoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EiapZJHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EijzUZHoEeKIn7-uhh23ew" name="insestCaseEvicences" visibility="public">
+              <ownedParameter xmi:id="_EijzUpHoEeKIn7-uhh23ew" name="cas" type="_EPyBRpHoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EijzU5HoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EitkUJHoEeKIn7-uhh23ew" name="insestCaseNameDetails" visibility="public">
+              <ownedComment xmi:id="_EitkU5HoEeKIn7-uhh23ew">
+                <body>/** 
+ * The insestCaseNameDetails method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when add new caseName details.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return boolean value true or false depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EitkUZHoEeKIn7-uhh23ew" name="cas" type="_EPyBRpHoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EitkUpHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EitkVJHoEeKIn7-uhh23ew" name="viewCaseDetails" visibility="public">
+              <ownedComment xmi:id="_Ei2uQJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewCaseDetails method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when add new caseName details.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector bean with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EitkVZHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ei2uQZHoEeKIn7-uhh23ew" name="viewAgentCaseDetails" visibility="public">
+              <ownedComment xmi:id="_Ei2uRJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewAgentCaseDetails method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view AgentCaseDetails details.....
+ * @param passinguserid as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector bean with view Agents details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_Ei2uQpHoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ei2uQ5HoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ei2uRZHoEeKIn7-uhh23ew" name="viewAgencyCaseDetails" visibility="public">
+              <ownedComment xmi:id="_EjAfQJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewAgencyCaseDetails method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view gency Details details.....
+ * @param passinguserid as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector bean with view Case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_Ei2uRpHoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ei2uR5HoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EjAfQZHoEeKIn7-uhh23ew" name="viewUpdateCases" visibility="public">
+              <ownedComment xmi:id="_EjKQQJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewUpdateCases method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view Update Cases Details details.....
+ * @param passingcaseid as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector bean with view Case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EjAfQpHoEeKIn7-uhh23ew" name="caseid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EjAfQ5HoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EjKQQZHoEeKIn7-uhh23ew" name="updateCase" visibility="public">
+              <ownedComment xmi:id="_EjdLMJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The updateCase method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when Update Cases Details details.....
+ * @param passingCase bean with case details as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector bean with update Case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EjKQQpHoEeKIn7-uhh23ew" name="cas" type="_EPyBRpHoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EjKQQ5HoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EjdLMZHoEeKIn7-uhh23ew" name="deleteCases" visibility="public">
+              <ownedComment xmi:id="_EjdLNJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The deleteCases method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when deleteCases Details details.....
+ * @param passingCaseid as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return true or false depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EjdLMpHoEeKIn7-uhh23ew" name="caseid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EjdLM5HoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EjdLNZHoEeKIn7-uhh23ew" name="viewCaseFiles" visibility="public">
+              <ownedComment xmi:id="_Ejm8MJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewCaseFiles method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view Case Files details.....
+ * @param passingCaseid as a one parameter
+ * @param passingrealpathfor image as a one parameter
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EjdLNpHoEeKIn7-uhh23ew" name="caseid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EjdLN5HoEeKIn7-uhh23ew" name="realpath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EjdLOJHoEeKIn7-uhh23ew" name="casename">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EjdLOZHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ejm8MZHoEeKIn7-uhh23ew" name="File" visibility="private">
+              <ownedParameter xmi:id="_Ejm8MpHoEeKIn7-uhh23ew" name="string">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Ejm8M5HoEeKIn7-uhh23ew" name="return" type="_EPo3XJHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EjwGIJHoEeKIn7-uhh23ew" name="addAgency" visibility="public">
+              <ownedComment xmi:id="_EjwGI5HoEeKIn7-uhh23ew">
+                <body>/** 
+ * The addAgency method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when addAgency details.....
+ * @param passingCase bean as one parameter contains casedetails
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return true or false depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EjwGIZHoEeKIn7-uhh23ew" name="cas" type="_EPyBRpHoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EjwGIpHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EjwGJJHoEeKIn7-uhh23ew" name="viewAgencyDetails" visibility="public">
+              <ownedComment xmi:id="_Ej53IJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewAgencyDetails method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view Agency Details details.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EjwGJZHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ej53IZHoEeKIn7-uhh23ew" name="viewAgencyNames" visibility="public">
+              <ownedComment xmi:id="_EkDBEJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewAgencyNames method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view Agency Names details.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_Ej53IpHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EkDBEZHoEeKIn7-uhh23ew" name="viewAgentNames" visibility="public">
+              <ownedComment xmi:id="_EkMyEJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewAgentNames method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view Agent Names details.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EkDBEpHoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EkDBE5HoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EkMyEZHoEeKIn7-uhh23ew" name="viewAgencyCaseNames" visibility="public">
+              <ownedComment xmi:id="_EkWjEJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewAgentNames method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view Agent Names details.....
+ * @param passingone parameter as userid
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EkMyEpHoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EkMyE5HoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EkWjEZHoEeKIn7-uhh23ew" name="viewCasesNames" visibility="public">
+              <ownedComment xmi:id="_EkWjE5HoEeKIn7-uhh23ew">
+                <body>/** 
+ * The view Cases Names method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view Cases Names Details.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EkWjEpHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EkWjFJHoEeKIn7-uhh23ew" name="assignCases" visibility="public">
+              <ownedComment xmi:id="_EkftAJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The assignCases Names method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when Assign Cases Details.....
+ * @param passingcase bean as a one parameter contains case details details
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EkWjFZHoEeKIn7-uhh23ew" name="cas" type="_EPyBRpHoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EkWjFpHoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EkftAZHoEeKIn7-uhh23ew" name="viewAssignedCaseDetails" visibility="public">
+              <ownedComment xmi:id="_EkpeAJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewAssignedCaseDetails Names method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view Assigned Case Details.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EkftApHoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EkpeAZHoEeKIn7-uhh23ew" name="viewAgentCaseAssinged" visibility="public">
+              <ownedComment xmi:id="_EkzPAJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The viewAgentCaseAssinged Names method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when view view AgentCase AssingedDetails.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EkpeApHoEeKIn7-uhh23ew" name="userid">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_EkpeA5HoEeKIn7-uhh23ew" name="return" type="_EPo3ZZHoEeKIn7-uhh23ew" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EkzPAZHoEeKIn7-uhh23ew" name="assignAgencyCases" visibility="public">
+              <ownedComment xmi:id="_EkzPBJHoEeKIn7-uhh23ew">
+                <body>/** 
+ * The assignAgencyCases Names method of the CaseDaoImpl Class. &lt;br>
+ * This method is called when AssignAgencyCases AssingedDetails.....
+ * @throws ConnectionExceptionif an error occurred
+ * @throws SQLExceptionif an error occurred
+ * @return Vector with case details depends upon operation
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_EkzPApHoEeKIn7-uhh23ew" name="cas" type="_EPyBRpHoEeKIn7-uhh23ew"/>
+              <ownedParameter xmi:id="_EkzPA5HoEeKIn7-uhh23ew" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3aZHoEeKIn7-uhh23ew" name="UserDAOI"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3bJHoEeKIn7-uhh23ew" name="MailDaoI"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBQJHoEeKIn7-uhh23ew" name="SecurityDaoI"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBTJHoEeKIn7-uhh23ew" name="CaseDAOI"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ENGgsJHoEeKIn7-uhh23ew" name="export">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ENGgsZHoEeKIn7-uhh23ew" name="ExportXLS">
+          <generalization xmi:id="_EkzPBZHoEeKIn7-uhh23ew" general="_EPyBVZHoEeKIn7-uhh23ew"/>
+          <ownedOperation xmi:id="_EkzPBpHoEeKIn7-uhh23ew" name="doGet" visibility="public">
+            <ownedParameter xmi:id="_EkzPB5HoEeKIn7-uhh23ew" name="req" type="_EPyBVpHoEeKIn7-uhh23ew"/>
+            <ownedParameter xmi:id="_EkzPCJHoEeKIn7-uhh23ew" name="res" type="_EPyBV5HoEeKIn7-uhh23ew"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_EPo3V5HoEeKIn7-uhh23ew" name="exception">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3WJHoEeKIn7-uhh23ew" name="ConnectionException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_EPo3WZHoEeKIn7-uhh23ew" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3WpHoEeKIn7-uhh23ew" name="LoggerManager"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3apHoEeKIn7-uhh23ew" name="DateWrapper"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBQZHoEeKIn7-uhh23ew" name="UtilConstants"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_EPo3ZpHoEeKIn7-uhh23ew" name="bean">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3Z5HoEeKIn7-uhh23ew" name="ProfileTO"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3a5HoEeKIn7-uhh23ew" name="MailsTO"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBRpHoEeKIn7-uhh23ew" name="CaseTO"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_EPyBR5HoEeKIn7-uhh23ew" name="crypt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_EPyBSJHoEeKIn7-uhh23ew" name="util">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBSZHoEeKIn7-uhh23ew" name="CryptMsgUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBSpHoEeKIn7-uhh23ew" name="DecryptFileUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBS5HoEeKIn7-uhh23ew" name="EncryptFile1Util"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_EPyBTZHoEeKIn7-uhh23ew" name="delegate">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBTpHoEeKIn7-uhh23ew" name="CaseDelegate"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_EPMLYJHoEeKIn7-uhh23ew" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_EPMLYZHoEeKIn7-uhh23ew" name="sql">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3UJHoEeKIn7-uhh23ew" name="Connection"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3UZHoEeKIn7-uhh23ew" name="DriverManager"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3UpHoEeKIn7-uhh23ew" name="ResultSet"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3U5HoEeKIn7-uhh23ew" name="SQLException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3VJHoEeKIn7-uhh23ew" name="Statement"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3YZHoEeKIn7-uhh23ew" name="Blob"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3YpHoEeKIn7-uhh23ew" name="CallableStatement"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3Y5HoEeKIn7-uhh23ew" name="PreparedStatement"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3ZJHoEeKIn7-uhh23ew" name="Types"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_EPo3VZHoEeKIn7-uhh23ew" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3VpHoEeKIn7-uhh23ew" name="Properties"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3ZZHoEeKIn7-uhh23ew" name="Vector"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBRZHoEeKIn7-uhh23ew" name="StringTokenizer"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_EPo3W5HoEeKIn7-uhh23ew" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3XJHoEeKIn7-uhh23ew" name="File"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3XZHoEeKIn7-uhh23ew" name="FileInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3XpHoEeKIn7-uhh23ew" name="FileNotFoundException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3X5HoEeKIn7-uhh23ew" name="FileOutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPo3YJHoEeKIn7-uhh23ew" name="OutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBQpHoEeKIn7-uhh23ew" name="BufferedInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBT5HoEeKIn7-uhh23ew" name="IOException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBUJHoEeKIn7-uhh23ew" name="PrintWriter"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_EPyBQ5HoEeKIn7-uhh23ew" name="net">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBRJHoEeKIn7-uhh23ew" name="ConnectException"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_EPyBUZHoEeKIn7-uhh23ew" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_EPyBUpHoEeKIn7-uhh23ew" name="servlet">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBU5HoEeKIn7-uhh23ew" name="ServletException"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_EPyBVJHoEeKIn7-uhh23ew" name="http">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBVZHoEeKIn7-uhh23ew" name="HttpServlet"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBVpHoEeKIn7-uhh23ew" name="HttpServletRequest"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBV5HoEeKIn7-uhh23ew" name="HttpServletResponse"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EPyBWJHoEeKIn7-uhh23ew" name="HttpSession"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
